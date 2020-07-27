@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="./css/portafolio.css">
+	<title>Portafolio</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Diego Andrés Olivares Lastra</h1>
+				<p>Designer web & Electronics Technician</p>
+				<a href="./curriculum.html">open my curriculum</a>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Curriculum</a>
+				<a href="#">Informativas</a>
+				<a href="#">Colaboraciones</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="informativas"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Pagina donde se da un pequeño resumen sobre las a criptomonedas y su funcionamiento."
+			>
+				<div class="item-contenido">
+					<img src="img/criptomoneda.jpg " alt="">
+				</div>
+				<a class="enlace" href="https://diegolastr.github.io/tareacripto/">criptomonedas </a>	
+			</div>
+
+			<div class="item"
+				 data-categoria="colaboraciones"
+				 data-etiquetas="empresas proyectos "
+				 data-descripcion="4.-Pagina como colaboracion a una pequeña empresa en argetina en el area de belleza, calsado y ropa. Desde un punto de vista ONEPAGE, menu responsive"
+			>
+				<div class="item-contenido">
+					<img src="img/guayabitas.jpg" alt="">
+				</div>
+				<a class="enlace" href="https://diegolastr.github.io/guayabita/"> Guayabitas Page </a>	
+
+			</div>
+
+			<div class="item"
+				 data-categoria="colaboraciones"
+				 data-etiquetas="empresas proyectos "
+				 data-descripcion="5.- Pagina con seis secciones las cuales tiene informacion de calidad y venta de productos y servicios digitales. Desde una estructura basica de una pagina web"
+			>
+				<div class="item-contenido">
+					<img src="img/digitalproducs.jpg" alt="">
+				</div>
+				<a class="enlace" href="https://diegolastr.github.io/dgjlproducts/"> Digital Products </a>	
+
+			</div>
+
+			<div class="item" 
+				 data-categoria="informativas"
+				 data-etiquetas="moda tenendecias noticias"
+				 data-descripcion="8.-En esta pagina hablamos sobre moda y tendencias en este año 2020."
+			>
+				<div class="item-contenido">
+					<img src="img/lastratendencias.jpg" alt="">
+				</div>
+				<a class="enlace" href="https://diegolastr.github.io/lastratendencias/">Lastra tendencias</a>	
+
+			</div>
+
+			<div class="item"
+				 data-categoria="curriculum"
+				 data-etiquetas="diego biografia Curriculum"
+				 data-descripcion="9.- En este seccion muestro mi resumen de Curriculum"> 
+				<div class="item-contenido">
+					<img src="img/olivares.jpg" alt="">
+					<a class="enlace" href="/curriculum.html"> My Curriculum</a>	
+
+				</div>
+			</div>
+			<div class="item"
+				 data-categoria="item-contenido"
+				 data-etiquetas="diego biografia Curriculum"
+				 data-descripcion="6.- Carrito de compras  en node.js, con bdd en mysql (para el control de clientes). Ahora no se encunetra en funcionamiento, dejaré el repositorio en github, para probarla directamente desde node.js"> 
+				<div class="item-contenido">
+					<img src="img/lastramarket.jpg" alt="">
+					<a class="enlace" href="https://github.com/diegolastr/lastramarket"> Lastra Market </a>	
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.facebook.com/olivareslastra" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.instagram.com/diegoolivaresl/" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>diseñado por <a href="#">Diego Olivares</a> - <a href="https://github.com/diegolastr?tab=repositories"> repositories</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
